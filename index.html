@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet"><!--output tailwid css linkinng-->
+  <tytle>priya's Forecast Application</tytle> <!--title-->
+</head>
+<body class="p-0 m-0 bg-emerald-300"><!--body-->
+<!-- container-->
+
+  <section class="container p-6 mx-auto mt-10 bg-gray-500 rounded-lg shadow-lg">
+    
+        <h1 class="mb-6 text-3xl font-bold text-center hover:text-fuchsia-400">Weather Forecast</h1>
+        
+        <section class="flex flex-col mb-6 weather-input md:flex-row md:items-center">
+            <div class="flex-1 mb-4 md:mb-0 md:mr-4">
+                <h3 class="mb-2 text-lg font-semibold hover:bg-sky-400">Enter city name</h3><!--city input enter button-->
+                <input class="w-full px-4 py-2 border border-gray-300 rounded-md city-input focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Enter city name">
+            </div>
+            <button class="w-full px-4 py-2 text-white transition duration-300 bg-blue-500 rounded-md search-btn md:w-auto hover:bg-blue-600">Search</button>
+            <button class="w-full px-4 py-2 mt-4 text-white transition duration-300 bg-green-500 rounded-md location-btn md:mt-0 md:ml-4 md:w-auto hover:bg-green-600">Use Current Location</button>
+        </section>
+
+        <select class="w-full px-4 py-2 mb-6 border border-gray-300 rounded-md city-dropdown">
+            <option value="">Select a city</option><!--SELECT CITY BUTTON-->
+        </select>
+<!--weather cards main card-->
+        <section class="weather-data">
+            <section class="flex flex-col mb-6 bg-gray-500 current-weather md:flex-row md:items-center hover:bg-violet-400">
+                <section class="mb-4 details md:mb-0 md:w-1/2 ">
+                    <h2 class="mb-2 text-2xl font-bold">______(_____)</h2>
+                    <h4 class="mb-1 text-lg">Temp: __°C</h4>
+                    <h4 class="mb-1 text-lg">Wind: __ m/s</h4>
+                    <h4 class="text-lg">Humidity: __%</h4>
+                </section>
+                <!--weather API map open-->
+                <section class="flex-none text-center icon md:w-1/2">
+                    <img class="w-24 h-24 mx-auto mb-2" src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather">
+                    <h4 class="text-lg">Moderate Rain</h4>
+                </section>
+            </section>
+            <!--five days forecast-->
+            <section class="days- hover:bg-purple-300">
+                <h2 class="mb-4 text-xl font-semibold hover:bg-zinc-200">5-Day Forecast</h2>
+                <ul class="grid grid-cols-1 gap-4 weather-cards md:grid-cols-2 lg:grid-cols-3">
+                    <li class="p-4 rounded-md shadow-md card bg-cyan-800 hover:bg-pink-300">
+         <h3 class="mb-2 text-lg font-semibold">(_________)</h3>
+                            <h4 class="mb-1 text-md">Temp: __°C</h4>
+                        <h4 class="mb-1 text-md">Wind: __ m/s</h4>
+          <h4 class="text-md">Humidity: __%</h4>
+                    </li>
+                    <li class="p-4 bg-blue-500 rounded-md shadow-md card hover:bg-pink-500 text-cyan-400">
+        <h3 class="mb-2 text-lg font-semibold">(_________)</h3>
+                        <h4 class="mb-1 text-md">Temp: __°C</h4>
+                  <h4 class="mb-1 text-md">Wind: __ m/s</h4>
+                   <h4 class="text-md">Humidity: __%</h4>
+                    </li>
+      <li class="p-4 rounded-md shadow-md card bg-sky-950 hover:bg-violet-300">
+                        <h3 class="mb-2 text-lg font-semibold">(_________)</h3>
+           <h4 class="mb-1 text-md">Temp: __°C</h4>
+                        <h4 class="mb-1 text-md">Wind: __ m/s</h4>
+                        <h4 class="text-md">Humidity: __%</h4>
+                    </li>
+                    <li class="p-4 bg-green-400 rounded-md shadow-md card hover:bg-red-500">
+                        <h3 class="mb-2 text-lg font-semibold">(_________)</h3>
+                  <h4 class="mb-1 text-md">Temp: __°C</h4>
+                        <h4 class="mb-1 text-md">Wind: __ m/s</h4>
+                 <h4 class="text-md">Humidity: __%</h4>
+                    </li>
+                    <li class="p-4 bg-purple-500 rounded-md shadow-md card hover:bg-cyan-700 hover:border-black-300">
+                        <h3 class="mb-2 text-lg font-semibold">(_________)</h3>
+                        <h4 class="mb-1 text-md">Temp: __°C</h4>
+                        <h4 class="mb-1 text-md">Wind: __ m/s</h4>
+                        <h4 class="text-md">Humidity: __%</h4>
+                    </li>
+                </ul>
+     </section>
+        </section>
+ </section>
+    <script src="pri.js" defer></script><!--javascript file linking-->
+</body>
+</html>
+   
